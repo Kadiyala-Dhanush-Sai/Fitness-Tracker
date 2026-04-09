@@ -1,0 +1,36 @@
+.getstarted-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #cbd5f5;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}

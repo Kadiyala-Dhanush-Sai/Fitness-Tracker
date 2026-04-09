@@ -1,0 +1,102 @@
+.workout-container {
+  padding: 30px;
+  text-align: center;
+}
+.matter{
+  margin: 30px;
+  font-size: large;
+  font-weight: 700;
+}
+.btnss{
+    padding: 10px;
+    width: 200px;
+    margin-left: 10px;
+}
+/* Body buttons */
+.body-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.exes{
+    justify-content: right;
+    display: flex;
+    width: 100%;
+    row-gap: 5px;
+    flex-direction: column;
+
+}
+.card{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+.description{
+ font-size: 15px;
+  color: #888;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 20px;
+  padding: 8px 16px;
+  background: #f1f3f5;
+  
+}
+.description span{
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6b6b; /* energetic color */
+}
+.exercises{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.body-grid div {
+  padding: 12px 20px;
+  background: #eee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Exercise sections */
+.exercise-section {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+/* Show only selected */
+.exercise-section.active {
+  display: block;
+}
+.input-box{
+    width: 15%;
+}
+.input-div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.button_plus {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid #095776;
+
+  /* Mittig */
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+}
+
+.button_plus:hover {
+  background-color: #095776;
+  transition: 0.2s;
+}

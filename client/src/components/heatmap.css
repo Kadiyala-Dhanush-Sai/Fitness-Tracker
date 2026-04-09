@@ -1,0 +1,27 @@
+.consistency-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.consistency-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 22px);
+  gap: 6px;
+}
+
+.box {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+/* Colors */
+.done {
+  background-color: #4caf50; /* green */
+}
+
+.missed {
+  background-color: #ddd; /* gray */
+}
