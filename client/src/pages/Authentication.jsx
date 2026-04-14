@@ -7,12 +7,13 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 function Authentication() {
     const [email, setEmail] = useState();
+    const API = import.meta.env.VITE_API_URL;
     const [password, setPassword] = useState();
     const [error, setError] = useState("");
     const navigate = useNavigate();
     const HandleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3000/login', { email, password })
+        axios.post(`${API}/login`, { email, password })
             .then((result) => {
                 console.log(result);
                 if (result.data.status === "success") {
