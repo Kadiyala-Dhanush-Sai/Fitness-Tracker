@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -10,7 +11,7 @@ app.use(cors())
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/user-authentication");
+        await mongoose.connect(process.env.MONGO_URI);
         console.log("MongoDB Connected ✅")
     } catch (err) {
         console.log(err);
