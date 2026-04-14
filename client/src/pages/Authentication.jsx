@@ -29,7 +29,6 @@ function Authentication() {
                 }
             })
             .catch(err => console.log(err))
-            console.log(result.data.user);
     }
     return (
         <>

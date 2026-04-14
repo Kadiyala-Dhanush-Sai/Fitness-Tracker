@@ -45,7 +45,9 @@ app.post('/login', (req, res) => {
             }
         })
 })
-
+app.get("/", (req, res) => {
+    res.send("BACKEND UPDATED SUCCESSFULLY 🚀");
+});
 app.listen(port, () => {
     console.log("Server started successfully");
 })
